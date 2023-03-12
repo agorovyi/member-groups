@@ -1,0 +1,42 @@
+.switchList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+
+  > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 1rem;
+      
+    }
+  }
+}
+
+.member {
+  margin-left: 1rem;
+  transition: transform 0.25s;
+  will-change: transform;
+}
+
+.memberAnimate {
+  transform: translateX(50px)
+}
+
+.tag {
+  background-color: #d8d8d8;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}

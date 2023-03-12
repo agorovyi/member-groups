@@ -1,0 +1,31 @@
+@keyframes skeleton {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.skeleton {
+  height: 12px;
+  min-width: 12px;
+  border-radius: 12 / 2px;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #d8d8d8;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    #d8d8d8,
+    #f7f7f8,
+    #d8d8d8
+  );
+  animation-name: skeleton;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}

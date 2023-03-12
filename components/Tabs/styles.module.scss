@@ -1,0 +1,44 @@
+.container {
+  background: #fff;
+  padding: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.3125rem rgba(23,24,24,.05),0 0.0625rem 0.125rem rgba(0,0,0,.15);
+}
+
+.tablist {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.05rem solid #b3b3b3;
+}
+
+.tablist > li {
+  list-style: none;
+}
+
+.tablist > li > a {
+  position: relative;
+  text-decoration: none;
+  margin-right: 1rem;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  &:not([aria-selected="true"]):hover {
+    border-bottom: 0.2rem solid #b3b3b3;
+  }
+}
+
+.tablist > li > [aria-selected="true"] {
+  border-bottom: 0.2rem solid #808080;
+}
+
+.panel {
+  padding-top: 2rem;
+}
